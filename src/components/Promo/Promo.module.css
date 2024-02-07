@@ -1,0 +1,84 @@
+/* Promo.module.css */
+
+.promoContainer {
+  background: #D0C7FC;
+  border-radius: 20px;
+  border: 1px solid var(--black, #261436);
+  padding: 3rem 4rem;
+  margin-bottom: 3rem;
+}
+
+.promoHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.promoTitle {
+  color: #261436;
+  font-family: Montserrat;
+  font-size: 62px;
+  font-weight: 700;
+  line-height: 140%;
+  letter-spacing: 1.24px;
+  text-transform: uppercase;
+}
+
+.promoSubtitle {
+  margin-left: -15px;
+  padding: 5px 25px 5px 15px;
+  border-radius: 20px;
+  background: #F6EEA2;
+  font-style: italic;
+}
+
+.promoInfoContainer {
+  display: flex;
+  gap: 8px;
+  margin-top: 1rem;
+}
+
+.promoButton {
+  background-color: #c6a9f2;
+  color: #7357c0;
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+}
+
+.promoDescription {
+  color: var(--black, #261436);
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: 0.4px;
+}
+
+.promoLearnButton {
+  background-color: #FFF170;
+  color: #000;
+  padding: 16px 32px;
+  border-radius: 20px;
+  margin-top: 1rem;
+  border: 1px solid #261436;
+}
+
+.promoInfo {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.promoInfoItem {
+  padding: 16px 32px;
+  border-radius: 20px;
+  border: 1px dashed #261436;
+}
+
+.promoFooterContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+}
