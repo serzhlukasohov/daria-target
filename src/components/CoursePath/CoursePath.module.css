@@ -1,0 +1,10 @@
+.сoursePathTitle {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 1.4;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #261436;
+  text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}

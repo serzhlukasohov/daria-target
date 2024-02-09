@@ -1,18 +1,18 @@
-import React from 'react';
-import styles from './Promo.module.css';
+import React from "react";
+import styles from "./Promo.module.css";
 
 const Promo = () => {
   return (
     <article className={styles.promoContainer}>
       <header className={styles.promoHeader}>
-        <section className="space-y-2">
-          <h1 className={styles.promoTitle}>
-            <i className={styles.promoSubtitle}>PROTARGET</i> СОТРИ
-            ГРАНИЦЫ В ПРОДВИЖЕНИИ
-          </h1>
-        </section>
+        <h1 className={styles.promoTitle}>
+          <i className={styles.promoSubtitle}>PROTARGET</i> СОТРИ
+          <br /> ГРАНИЦЫ В ПРОДВИЖЕНИИ
+        </h1>
+
         <p className={styles.promoDescription}>
-          С любой точки мира, без связей ты сможешь зарабатывать 1000-3000$ с помощью таргетированной рекламы. Я тебя научу!
+          С любой точки мира, без связей ты сможешь зарабатывать 1000-3000$ с
+          помощью таргетированной рекламы. Я тебя научу!
         </p>
       </header>
       <div className={styles.promoFooterContainer}>
@@ -27,7 +27,7 @@ const Promo = () => {
         </div>
       </div>
     </article>
-  )
-}
+  );
+};
 
 export default Promo;

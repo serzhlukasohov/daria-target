@@ -5,8 +5,8 @@
   align-items: center;
   justify-content: center;
   gap: 44px;
-  padding-top: 24px;
-  padding-bottom: 62px;
+  padding-top: 40px;
+  padding-bottom: 58px;
 }
 
 .nav-list {
@@ -31,4 +31,14 @@
 
 .nav-link:hover {
   text-decoration: underline;
+}
+
+.rotatedElement {
+ 
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  bottom: 10px;
+  left: 10px;
+ 
 }
