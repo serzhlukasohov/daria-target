@@ -8,7 +8,7 @@ import VideoPresentation from "@/components/ VideoPresentation";
 import Footer from "@/components/Footer";
 import CoursePath from "@/components/CoursePath";
 import CareerPath from "@/components/CareerPath";
-import QuestionAnswer from "@/components/QuestionAnswer";
+import FAQSection from "@/components/FAQSection";
 import CourseProgram from "@/components/CourseProgram";
 import Rates from "@/components/ Rates";
 import Present from "@/components/Present";
@@ -48,7 +48,7 @@ export default function Home() {
         <Present />
         <Speakers />
         <Reviews />
-        <QuestionAnswer />
+        <FAQSection />
         <Footer />
         <div className="fixed bottom-4 right-4 bg-purple-400 p-3 rounded-full shadow-lg">
           <i className="fas fa-arrow-up text-white"></i>

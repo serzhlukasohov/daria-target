@@ -11,10 +11,20 @@
 
   --dark-plum: #261436;
   --slate-gray: #4B5563;
+  --light-yellow: #FFF170;
+  --light-lavender: #D0C7FC;
 
   --font-regular-16: normal 400 16px/140% Montserrat;
   --font-regular-18: normal 400 18px/140% Montserrat;
+  --font-regular-20: normal 400 20px/140% Montserrat;
+  --font-semi-medium-24: normal 500 24px/140% Montserrat;
+  --font-semi-bold-36: normal 600 36px/140% Montserrat;
+
   --letter-spacing-32: 0.32px;
+
+  --section-margin-b: 130px;
+
+  --border-radius: 20px;
 }
 
 * {

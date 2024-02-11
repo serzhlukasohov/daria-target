@@ -1,7 +1,7 @@
 /* Promo.module.css */
 
 .promoContainer {
-  background: #D0C7FC;
+  background: var(--light-lavender);
   border-radius: 20px;
   border: 1px solid var(--black, #261436);
   padding: 103px 40px 61px 40px;
