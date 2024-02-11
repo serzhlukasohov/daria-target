@@ -8,6 +8,13 @@
   --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
     'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
     'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
+
+  --dark-plum: #261436;
+  --slate-gray: #4B5563;
+
+  --font-regular-16: normal 400 16px/140% Montserrat;
+  --font-regular-18: normal 400 18px/140% Montserrat;
+  --letter-spacing-32: 0.32px;
 }
 
 * {

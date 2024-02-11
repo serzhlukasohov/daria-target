@@ -1,0 +1,62 @@
+.footerContent {
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+.footerTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.contactInfo {
+  color: var(--slate-gray);
+}
+
+.email {
+  margin-bottom: 16px;
+  color: var(--dark-plum);
+  font: var(--font-regular-16);
+  letter-spacing: var(--letter-spacing-32);
+}
+
+.businessName {
+  margin-bottom: 16px;
+  color: var(--dark-plum);
+  font: var(--font-regular-16);
+  letter-spacing: var(--letter-spacing-32);
+}
+
+.businessNumber {
+  color: var(--dark-plum);
+  font: var(--font-regular-16);
+  letter-spacing: var(--letter-spacing-32);
+}
+
+.navLinks {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 44px;
+  margin-bottom: 32px;
+}
+
+.navLinks a {
+  color: var(--dark-plum);
+  font: var(--font-regular-18);
+  letter-spacing: var(--letter-spacing);
+}
+
+.footerLinks p {
+  margin-bottom: 16px;
+  color: var(--dark-plum);
+  font: var(--font-regular-16);
+  letter-spacing: var(--letter-spacing-32);
+  text-decoration-line: underline;
+}
+.footerLinks p:last-child {
+  margin: 0;
+}
+.footerLinks p:nth-child(3) {
+  margin: 0;
+}
