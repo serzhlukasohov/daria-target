@@ -16,6 +16,25 @@ import Reviews from "@/components/Reviews";
 import Speakers from "@/components/Speakers";
 import ForYou from "@/components/ForYou";
 
+function TestimonialCard({ name, description, imageSrc, imageAlt }) {
+  return (
+    <div className="max-w-sm rounded overflow-hidden shadow-lg bg-white text-center p-6 m-4">
+      <div className="w-24 h-24 mx-auto mb-4">
+        <img
+          className="rounded-full border-solid border-white border-2 -mt-12"
+          src={imageSrc}
+          alt={imageAlt}
+        />
+      </div>
+      <div className="font-bold text-xl mb-2">{name}</div>
+      <p className="text-gray-700 text-base">{description}</p>
+      <button className="bg-purple-500 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded-full mt-4">
+        Смотреть видео
+      </button>
+    </div>
+  );
+}
+
 export default function Home() {
   return (
     <div className="bg-gradient-to-br">
