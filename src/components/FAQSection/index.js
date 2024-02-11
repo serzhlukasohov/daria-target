@@ -4,9 +4,9 @@ import styles from './FAQSection.module.css'
 const FAQSection = () => {
   return (
     <div className={styles.faqContainer}>
-      <div className={styles.sectionTitle}>
+      <h2 className="sectionTitle">
         ВОПРОС-ОТВЕТ
-      </div>
+      </h2>
       <div className={styles.questionGrid}>
         <Question text="Могу ли купить курс в рассрочку?" />
         <Question text="Что обязательно нужно для работы?" />
@@ -17,7 +17,7 @@ const FAQSection = () => {
         <Question text="Как быстро я смогу окупить курс?" />
         <Question text="Как получить сертификат? Они выдаются всем?" />
       </div>
-      <button className={styles.fillButton}>
+      <button className="button">
         Заполнить анкету
       </button>
     </div>

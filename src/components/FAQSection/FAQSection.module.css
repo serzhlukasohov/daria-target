@@ -6,30 +6,11 @@
   margin-bottom: var(--section-margin-b);
 }
 
-.sectionTitle {
-  margin-bottom: 40px;
-  color: var(--dark-plum);
-  font: var(--font-semi-bold-36);
-  letter-spacing: 0.72px;
-}
-
 .questionGrid {
   display: grid;
   grid-template-columns: 2fr 2fr;
   row-gap: 24px;
   column-gap: 32px;
-}
-
-.fillButton {
-  margin-top: 32px;
-  padding: 16px 32px;
-  border-radius: var(--border-radius);
-  border: 1px solid var(--dark-plum);
-  background: var(--light-yellow);
-
-  color: var(--dark-plum);
-  font: var(--font-regular-20);
-  letter-spacing: 0.4px;
 }
 
 .questionContainer {

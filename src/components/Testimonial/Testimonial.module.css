@@ -56,3 +56,36 @@
   width: 100%;
   margin-top: 40px;
 }
+
+.testimonialsVideoContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 32px;
+}
+
+.videoCardContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 100px;
+  padding: 30px;
+
+  border-radius: var(--border-radius);
+  border: 1px solid var(--dark-plum);
+  background: var(--light-lavender);
+}
+
+.nameVideo {
+  margin-bottom: 16px;
+  color: var(--dark-plum);
+  font: var(--font-regular-20);
+  letter-spacing: 0.4px;
+}
+
+.descriptionVideo {
+  margin-bottom: auto;
+  text-align: center;
+  color: var(--dark-plum);
+  font: var(--font-semi-medium-24);
+  letter-spacing: 0.48px;
+}
