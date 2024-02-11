@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./FeaturesSection.module.css"; // Make sure the path is correct
-
+import img from "../../components/FeaturesSection/img.jpg"; // Make sure the path is correct
 
 const FeaturesSection = () => {
   return (
@@ -36,7 +36,7 @@ const FeaturesSection = () => {
             alt="A woman in a white dress posing with a confident smile"
             className="rounded-full"
             height="400"
-            src="./img.jpg"
+            src={img}
             width="300"
           />
         </div>
