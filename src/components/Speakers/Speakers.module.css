@@ -1,0 +1,31 @@
+.speakersContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: var(--section-margin-b);
+}
+
+.listSpeakers {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 55px;
+}
+
+.speaker {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: -55px;
+}
+
+.speakerName {
+  margin-top: 24px;
+
+  color: var(--dark-plum);
+  text-align: center;
+  font: var(--font-semi-medium-24);
+  letter-spacing: 0.48px;
+}
