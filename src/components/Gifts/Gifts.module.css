@@ -1,0 +1,37 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: var(--section-margin-b);
+}
+.bonusIcon {
+  margin-bottom: 16px;
+}
+
+.bonusesList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  column-gap: 21px;
+  row-gap: 24px;
+}
+
+.bonusItem {
+  width: 304px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.bonusItem:nth-child(2n) {
+  margin-top: 70px;
+}
+
+.text {
+  text-align: center;
+  color: var(--dark-plum);
+  font: var(--font-regular-20);
+  letter-spacing: 0.4px;
+}

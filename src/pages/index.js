@@ -11,7 +11,7 @@ import CareerPath from "@/components/CareerPath";
 import FAQSection from "@/components/FAQSection";
 import CourseProgram from "@/components/CourseProgram";
 import Rates from "@/components/ Rates";
-import Present from "@/components/Present";
+import Gifts from "@/components/Gifts";
 import Speakers from "@/components/Speakers";
 import ForYou from "@/components/ForYou";
 import Testimonial from "@/components/Testimonial";
@@ -45,7 +45,7 @@ export default function Home() {
         <CourseProgram />
         <ForYou />
         <Rates />
-        <Present />
+        <Gifts />
         <Speakers />
         <Testimonial />
         <FAQSection />
