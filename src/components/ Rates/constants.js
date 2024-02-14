@@ -1,0 +1,56 @@
+export const BASE_RATE = [
+  {"text": "Доступ к модулям 1-7", "hasFeature": true},
+  {"text": "Доступ к дополнительным материалам", "hasFeature": true},
+  {"text": "Чат с вакансиями", "hasFeature": true},
+  {"text": "Чат студентов обучения", "hasFeature": true},
+  {"text": "Доступ к материалам на 6 месяцев", "hasFeature": true},
+  {"text": "Доступ к бонусным урокам (мастермайндам)", "hasFeature": false},
+  {"text": "Участие в сессиях вопрос/ответ", "hasFeature": false},
+  {"text": "Сопровождение от Даши и проверка ДЗ", "hasFeature": false},
+  {"text": "Чат с Дашей", "hasFeature": false},
+  {"text": "Сертификация (при условии сдачи ДЗ)", "hasFeature": false},
+  {"text": "Личная онлайн-встреча или выпускной с Дашей после курса", "hasFeature": false},
+  {"text": "Передача проектов для работы", "hasFeature": false},
+  {"text": "1 месяц обратной связи ", "hasFeature": false},
+  {"text": "Закрытое комьюнити таргетологов с выпускниками моего менторства", "hasFeature": false},
+  {"text": "Стратегии продвижений для 20 ниш", "hasFeature": false}
+];
+
+
+export const WITH_SUPPORT = [
+  {"text": "Доступ к модулям 1-8", "hasFeature": true},
+  {"text": "Доступ к дополнительным материалам", "hasFeature": true},
+  {"text": "Доступ к бонусным урокам (мастермайндам)", "hasFeature": true},
+  {"text": "Участие в сессиях вопрос/ответ", "hasFeature": true},
+  {"text": "Куратор и проверка дз", "hasFeature": true},
+  {"text": "Чат с куратором", "hasFeature": true},
+  {"text": "Сертификация (при условии сдачи ДЗ)", "hasFeature": true},
+  {"text": "Чат студентов обучения", "hasFeature": true},
+  {"text": "Личная онлайн-встреча или выпускной с Дашей после курса", "hasFeature": true},
+  {"text": "Групповая онлайн-встреча или выпускной с Дашей после курса", "hasFeature": true},
+  {"text": "Чат с вакансиями", "hasFeature": true},
+  {"text": "Закрытое комьюнити таргетологов с выпускниками твоего менторства", "hasFeature": true},
+  {"text": "Доступ к материалам на 12 месяцев", "hasFeature": true},
+  {"text": "1 месяц обратной связи", "hasFeature": true},
+  {"text": "Закрытое комьюнити таргетологов с выпускниками моего менторства", "hasFeature": false},
+  {"text": "Стратегии продвижений для 20 ниш", "hasFeature": false},
+]
+
+export const WITHOUT_BORDERS = [
+  {"text": "Доступ к модулям 1-8", "hasFeature": true},
+  {"text": "Доступ к дополнительным материалам", "hasFeature": true},
+  {"text": "Доступ к бонусным урокам (мастермайндам)", "hasFeature": true},
+  {"text": "Участие в сессиях вопрос/ответ", "hasFeature": true},
+  {"text": "Куратор и проверка дз", "hasFeature": true},
+  {"text": "Чат с куратором", "hasFeature": true},
+  {"text": "Сертификация (при условии сдачи ДЗ)", "hasFeature": true},
+  {"text": "Чат студентов обучения", "hasFeature": true},
+  {"text": "Личная онлайн-встреча или выпускной с Дашей после курса", "hasFeature": true},
+  {"text": "Групповая онлайн-встреча или выпускной с Дашей после курса", "hasFeature": true},
+  {"text": "Чат с вакансиями", "hasFeature": true},
+  {"text": "Закрытое комьюнити таргетологов с выпускниками твоего менторства", "hasFeature": true},
+  {"text": "Доступ к материалам на 12 месяцев", "hasFeature": true},
+  {"text": "1 месяц обратной связи", "hasFeature": true},
+  {"text": "Закрытое комьюнити таргетологов с выпускниками моего менторства", "hasFeature": true},
+  {"text": "Стратегии продвижений для 20 ниш", "hasFeature": true},
+]

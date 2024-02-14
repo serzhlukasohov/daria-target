@@ -1,121 +1,80 @@
 import React from "react";
-import styled from "./Rates.module.css";
+import Image from 'next/image'
+import styles from "./Rates.module.css";
+import { BASE_RATE, WITH_SUPPORT, WITHOUT_BORDERS } from './constants';
+import CheckIcon from './images/checkIcon.svg';
+import CloseIcon from './images/close.svg';
+import StarIcon from './images/star.svg';
 
-
-function TariffCard({
-    title,
-    price,
-    features,
-    buttonText,
-    buttonSecondaryText,
-    isFeatured,
-  }) {
-    return (
-      <div
-        className={`p-6 rounded-lg shadow-lg bg-white ${
-          isFeatured ? "border-4 border-yellow-400" : ""
-        }`}
-      >
+function RateCard({
+  title,
+  price,
+  features,
+  isFeatured,
+}) {
+  return (
+    <div className={`${styles.containerRate} ${isFeatured ? styles.featuredContainer : ''}`}>
+      <div className={styles.headerTopContainer}>
+        <div>
+          <div className={styles.rateType}>{title}</div>
+          <div className={styles.ratePrice}>{price}</div>
+        </div>
         {isFeatured && (
-          <div className="flex justify-center items-center mb-4">
-            <i className="fas fa-star text-yellow-400"></i>
-          </div>
+          <Image
+            width="40"
+            height="40"
+            src={StarIcon}
+          />
         )}
-        <div className="font-bold text-lg mb-4">{title}</div>
-        <div className="font-bold text-xl mb-4">{price}</div>
-        <ul className="mb-6">
-          {features.map((feature, index) => (
-            <li key={index} className="flex items-center mb-2">
-              <i className="fas fa-check text-green-500 mr-2"></i>
-              {feature}
-            </li>
-          ))}
-        </ul>
-        <button className="bg-purple-600 text-white py-2 px-4 rounded-lg mb-2 w-full">
-          {buttonText}
-        </button>
-        <button className="bg-purple-300 text-purple-700 py-2 px-4 rounded-lg w-full">
-          {buttonSecondaryText}
-        </button>
       </div>
-    );
-  }
+      <ul className={styles.rateList}>
+        {features.map((feature, index) => (
+          <li key={index} className={styles.rateItem}>
+            <Image
+              width="20"
+              height="20"
+              src={feature.hasFeature ? CheckIcon : CloseIcon}
+              className={styles.checkIcon}
+            />
+            <span className={`${styles.textItem} ${!feature.hasFeature ? styles.featureItem : ''}`}>{feature.text}</span>
+          </li>
+        ))}
+      </ul>
+      <button className="button">
+        Заполнить анкету
+      </button>
+      <button className={`button ${styles.fillFormBtn}`}>
+        Рассрочка
+      </button>
+    </div>
+  );
+}
 
 const Rates = () => {
   return (
-    <div className="bg-purple-100 p-8">
-      <div className="text-center font-bold text-2xl mb-6">ТАРИФЫ</div>
-      <div className="text-center text-sm mb-2">
+    <div className={styles.containerRates}>
+      <h2 className="sectionTitle">ТАРИФЫ</h2>
+      <h3 className={styles.priceText}>
         1-я цена по акции предзаписи.
-      </div>
-      <div className="text-center text-sm mb-8">2-я цена обычная</div>
-      <div className="flex flex-col md:flex-row justify-center gap-4">
-        <TariffCard
+        <br />
+        2-я цена обычная
+      </h3>
+      <div className={styles.listRates}>
+        <RateCard
           title="Базовый"
           price="260/360$"
-          features={[
-            "Доступ к модулям 1-7",
-            "Доступ к дополнительным материалам",
-            "Чат студентов обучения",
-            "Доступ к материалам на 6 месяцев",
-            "Доступ к бонусным урокам (мастермайндам)",
-            "Участие в еженедельных вопрос/ответ",
-            "Сопровождение от Лаши и проверка ДЗ",
-            "Чат с Лашей",
-            "Сертификация (при условии сдачи ДЗ)",
-            "Групповая онлайн-встреча выпускников с Лашей после курса",
-            "Передача проектов для работы",
-            "Закрытое комьюнити таргетологов-с выпускниками моего менторства",
-            "Стратегия продвижения для 20+ ниш",
-          ]}
-          buttonText="Заполнить анкету"
-          buttonSecondaryText="Рассрочка"
+          features={BASE_RATE}
         />
-        <TariffCard
+        <RateCard
           title="С поддержкой таргетолога"
           price="490/590$"
-          features={[
-            "Доступ к модулям 1-8",
-            "Доступ к дополнительным материалам",
-            "Доступ к бонусным урокам (мастермайндам)",
-            "Участие в еженедельных вопрос/ответ",
-            "Куратор и проверка ДЗ",
-            "Чат с куратором",
-            "Сертификация (при условии сдачи ДЗ)",
-            "Чат студентов обучения",
-            "Групповая онлайн-встреча или выпускной с Лашей после курса",
-            "Чат с кураторами",
-            "Закрытое комьюнити таргетологов-с выпускниками твоего менторства",
-            "Доступ к материалам на 12 месяцев",
-            "Закрытое обратной связи",
-            "Стратегия продвижения для 20+ ниш",
-          ]}
-          buttonText="Заполнить анкету"
-          buttonSecondaryText="Рассрочка"
+          features={WITH_SUPPORT}
           isFeatured
         />
-        <TariffCard
+        <RateCard
           title="Без границ с Лашей"
           price="890/990$"
-          features={[
-            "Доступ к модулям 1-8",
-            "Доступ к дополнительным материалам",
-            "Доступ к бонусным урокам (мастермайндам)",
-            "Участие в еженедельных вопрос/ответ",
-            "Сопровождение от Лаши и проверка ДЗ",
-            "Чат с Лашей",
-            "Сертификация (при условии сдачи ДЗ)",
-            "Чат студентов обучения",
-            "Личная онлайн-встреча или выпускной с Лашей после курса",
-            "Чат с вакансиями",
-            "Передача проектов для работы",
-            "Доступ к материалам пожизненный",
-            "1 месяц обратной связи",
-            "Закрытое комьюнити таргетологов с выпускниками моего менторства",
-            "Стратегия продвижения для 20 ниш",
-          ]}
-          buttonText="Заполнить анкету"
-          buttonSecondaryText="Рассрочка"
+          features={WITHOUT_BORDERS}
         />
       </div>
     </div>

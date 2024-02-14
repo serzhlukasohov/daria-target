@@ -1,0 +1,89 @@
+.containerRates {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: var(--section-margin-b);
+}
+
+.priceText {
+  color: var(--dark-plum);
+  text-align: center;
+
+  font: var(--font-semi-medium-24);
+  letter-spacing: 0.48px;
+}
+
+.listRates {
+  display: flex;
+  margin-top: 40px;
+  column-gap: 32px;
+}
+
+.containerRate {
+  display: flex;
+  padding: 30px;
+  flex-direction: column;
+  align-items: center;
+
+  border-radius: var(--border-radius);
+  border: 1px solid var(--dark-plum);
+  background: #F6F6F6;
+
+  /* shadow */
+  box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.10);
+}
+
+.rateType {
+  text-align: left;
+  margin-bottom: 24px;
+  color: var(--dark-plum);
+  font: var(--font-semi-medium-24);
+}
+
+.ratePrice {
+  margin-bottom: 30px;
+  color: var(--dark-plum);
+  font: var(--font-semi-bold-36);
+}
+
+.rateList {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: auto;
+  gap: 16px;
+}
+
+.rateItem {
+  display: flex;
+  align-items: center;
+}
+
+.checkIcon {
+  margin-right: 10px;
+}
+
+.textItem {
+  color: var(--dark-plum);
+  font: var(--font-regular-20);
+}
+
+.featureItem {
+  text-decoration: line-through;
+  color: #735D87;
+}
+
+.fillFormBtn {
+  min-width: 256px;
+  background: #F6F6F6;
+}
+
+.featuredContainer {
+  background: #D0C7FC;
+}
+
+.headerTopContainer {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+}
