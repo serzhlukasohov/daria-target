@@ -1,0 +1,57 @@
+.careerPathContainer {
+  margin-top: 98px;
+  justify-content: center;
+  align-items: center;
+}
+
+.careerPathItem {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 1.4;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #261436;
+  text-align: center;
+}
+
+.careerPathList {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.careerPathBlock {
+  max-width: 392px;
+  margin: 0 auto;
+}
+
+.careerPathFlex {
+  display: flex;
+  align-items: center;
+  max-width: 396px;
+  gap: 24px;
+  padding-bottom: 16px;
+}
+
+.careerPathTitle {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.4;
+  letter-spacing: 0.02em;
+  color: #261436;
+}
+
+.careerPathText {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.4;
+  letter-spacing: 0.02em;
+  color: #261436;
+  padding-bottom: 80px;
+}
+.careerPathList {
+  display: flex;
+}
