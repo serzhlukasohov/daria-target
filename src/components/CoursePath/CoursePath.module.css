@@ -1,3 +1,7 @@
+.сoursePathContainer {
+  margin-top: 130px;
+}
+
 .сoursePathTitle {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
@@ -6,5 +10,50 @@
   letter-spacing: 0.02em;
   text-transform: uppercase;
   color: #261436;
-  text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  padding-bottom: 34px;
+}
+
+.coursePathBorder {
+  border-radius: 20px;
+  padding: 10px;
+  width: 65px;
+  height: 59px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px dashed #fff170;
+  font-size: 32px;
+  color: #261436;
+  font-weight: bold;
+}
+
+.coursePathText {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.4;
+  letter-spacing: 0.02em;
+  color: #261436;
+}
+
+.coursePathBlock {
+  border: 1px solid #261436;
+  border-radius: 20px;
+  padding: 30px;
+  width: 342px;
+  height: 255px;
+  box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.1);
+  background: #d0c7fc;
+}
+
+.coursePathFlex {
+  display: flex;
+  padding-bottom: 32px;
+  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
 }
