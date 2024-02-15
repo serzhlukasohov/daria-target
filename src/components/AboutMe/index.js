@@ -1,61 +1,67 @@
 import React from "react";
-import styled from "./AboutMe.module.css";
+import Image from "next/image";
+
+import styles from "./AboutMe.module.css";
+import DariaLevshinaImage from "./images/DariaLevshina.png";
 
 const AboutMe = () => {
   return (
-    <div className="bg-white p-8">
-      <div className="text-center py-8">
-        <h1 className="text-4xl font-bold text-gray-800">ОБО МНЕ</h1>
-        <div className="mt-6 relative">
-          <div className="inline-block bg-purple-100 rounded-full p-2">
-            <img
-              src="https://placehold.co/200x200"
-              alt="Portrait of a woman with brown hair, wearing a white top, with a light purple circular background"
-              className="rounded-full"
+    <section>
+      <div className={styles.aboutMeContainer}>
+        <h2 className="sectionTitle">ОБО МНЕ</h2>
+        <div className={styles.aboutMeBlock}>
+          <div>
+            <Image
+              className={styles.aboutMeImg}
+              width="419"
+              height="620"
+              alt="Daria Levshina"
+              src={DariaLevshinaImage}
             />
           </div>
-          <div className="mt-6 text-left">
-            <p className="text-gray-700">Привет! Меня зовут Дарья Левшина!</p>
-            <p className="text-gray-700 mt-4">
-              Я живу в Польше с 2022 года и Таргетолог, работаю с
-              предпринимателями, салонами, блогерами, онлайн-школами и другими,
-              мой доход ОТ 2000$ месяц.
-            </p>
-            <p className="text-gray-700 mt-4">
-              Первый свой курс по таргету я покупала работая в найме (в
-              расрочку) всегда мечтала работать удаленно на себя несколько часов
-              в день, чтобы больше времени уделять себе, семье и путешествиям.
-            </p>
-            <p className="text-gray-700 mt-4">
-              Для себя я разрушила систему жизни от ЗП до ЗП и работы на пенсию.
-            </p>
-            <p className="text-gray-700 mt-4">
-              И воплотила свою мечту достаточно быстро с помощью Фриланса! Мой
-              доход, зависит только от меня и я продолжаю работать в таргете, а
-              также помогаю всем кто этого хочет.
-            </p>
-            <div className="flex justify-between items-center mt-6">
-              <div className="text-gray-700">
-                <span className="block font-bold text-xl">от 2000$</span>
-                <span className="block text-sm">доход в месяц</span>
+          <div className={styles.aboutMeBlockText}>
+            <div className={styles.aboutMeText}>
+              <span className={styles.aboutMeTextSpan}>
+                Привет! Меня зовут Дарья Левшина!
+              </span>
+              <p class="Gifts_text__kmQiW">
+                Я живу в Польше и с 2022 года я Таргетолог, работаю с
+                предпринимателями, салонами, блогерами, онлайн-школами и
+                другими, мой доход ОТ 2000$ месяц.
+              </p>
+              <p class="Gifts_text__kmQiW">
+                Первый свой курс по таргету я покупала работая в найме (в
+                рассрочку) всегда мечтала работать удаленно на себя несколько
+                часов в день, чтобы больше времени уделять себе, семье и
+                путешествиям. <br/> Для себя я разрушила систему жизни от ЗП до ЗП и
+                работы на пенсию. <br/> И воплотила свою мечту достаточно быстро с
+                помощью Фриланса! Мой доход, зависит только от меня и я
+                продолжаю работать в таргете, а также помогаю всем кто этого
+                хочет.
+              </p>
+            </div>
+            <div className={styles.aboutMeBlockFlex}>
+              <div className={styles.aboutMeFlexBlock}>
+                <span className={styles.aboutMeTextSpan}>от 2000$</span>
+                <p class="Gifts_text__kmQiW">доход в месяц </p>
               </div>
-              <div className="text-gray-700">
-                <span className="block font-bold text-xl">40+</span>
-                <span className="block text-sm">успешных проектов</span>
+              <div className={styles.aboutMeFlexBlock}>
+                <span className={styles.aboutMeTextSpan}>40+</span>
+                <p class="Gifts_text__kmQiW">успешных проектов</p>
               </div>
-              <div className="text-gray-700">
-                <span className="block font-bold text-xl">Европа</span>
-                <span className="block text-sm">гео</span>
+              <div className={styles.aboutMeFlexBlock}>
+                <span className={styles.aboutMeTextSpan}>Европа</span>
+                <p class="Gifts_text__kmQiW">гео</p>
               </div>
-              <div className="text-gray-700">
-                <span className="block font-bold text-xl">50</span>
-                <span className="block text-sm">выпускников</span>
+              <div className={styles.aboutMeFlexBlock}>
+                <span className={styles.aboutMeTextSpan}>50</span>
+                <p class="Gifts_text__kmQiW">выпускников</p>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

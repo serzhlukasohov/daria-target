@@ -1,0 +1,62 @@
+.aboutMeContainer {
+  text-align: center;
+  margin-top: 130px;
+  margin-bottom: 130px;
+}
+
+.aboutMeBlock {
+  display: flex;
+  justify-content: space-between;
+  height: 620px;
+}
+
+.aboutMeImg {
+  width: 419px;
+  height: 620px;
+}
+
+.aboutMeBlockText {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  width: 759px;
+}
+
+.aboutMeBlockFlex {
+  display: flex;
+  text-align: center;
+  width: 100%;
+  align-items: flex-end;
+}
+.aboutMeFlexBlock {
+  display: block;
+
+  margin: 50px auto;
+  text-align: center;
+}
+
+.aboutMeTextSpan {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 140%;
+  letter-spacing: 0.02em;
+  color: var(--black);
+}
+
+.aboutMeText p {
+  text-align: left;
+  padding-top: 16px;
+}
+
+.aboutMeText  {
+    text-align: left;
+    margin-top: 55px;
+  }
+  
+  .aboutMeText span {
+    text-align: left;
+    margin-top: 55px;
+    margin-bottom: 55px;
+  }
