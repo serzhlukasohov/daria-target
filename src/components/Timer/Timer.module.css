@@ -1,0 +1,55 @@
+/* CountdownTimer.module.css */
+.countdownTimer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: var(--section-margin-b);
+  padding: 42px 32px;
+  border-radius: 20px;
+  border: 1px solid var(--dark-plum);
+  background: var(--light-lavender);
+}
+
+.title {
+  color: var(--dark-plum);
+  font: var(--font-semi-medium-24);
+  font-weight: 700;
+}
+
+.subtitle {
+  color: var(--dark-plum);
+  font: var(--font-regular-20);
+}
+
+.timerContainer{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 343px;
+}
+
+.timerSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.timer {
+  color: var(--dark-plum);
+  font: var(--font-bold-32);
+}
+
+.separator {
+  color: var(--dark-plum);
+  font: var(--font-semi-bold-28);
+}
+
+.date {
+  color: var(--dark-plum);
+  font: var(--font-regular-20);
+}
+
+.fillBtn {
+  margin-top: 0;
+}

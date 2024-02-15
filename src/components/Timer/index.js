@@ -1,34 +1,66 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import styles from "./Timer.module.css";
 
 const Timer = () => {
+  const padWithZero = (number) => {
+    return number < 10 ? `0${number}` : number;
+  };
+  
+  const calculateTimeLeft = () => {
+    const difference = +new Date("February 20, 2024 00:00:00") - +new Date();
+    let timeLeft = {};
+
+    if (difference > 0) {
+      timeLeft = {
+        days: padWithZero(Math.floor(difference / (1000 * 60 * 60 * 24))),
+        hours: padWithZero(Math.floor((difference / (1000 * 60 * 60)) % 24)),
+        minutes: padWithZero(Math.floor((difference / 1000 / 60) % 60)),
+        seconds: padWithZero(Math.floor((difference / 1000) % 60)),
+      };
+    }
+
+    return timeLeft;
+  };
+
+  const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setTimeLeft(calculateTimeLeft());
+    }, 1000);
+
+    // Clear timeout if the component is unmounted
+    return () => clearTimeout(timer);
+  });
+
   return (
-    <div className="bg-white p-8">
-      <div className="bg-purple-200 p-4 rounded-t-lg text-center">
-        <span className="text-purple-700 font-semibold">ИДЕТ ПРЕДЗАПИСЬ!</span>
-        <span className="block text-gray-600">Окончание через:</span>
-        <div className="flex justify-center items-center space-x-2 mt-2">
-          <div className="bg-white rounded p-2">
-            <span className="text-2xl font-bold text-purple-700">00</span>
-            <span className="block text-xs text-gray-600">ДНЕЙ</span>
-          </div>
-          <div className="bg-white rounded p-2">
-            <span className="text-2xl font-bold text-purple-700">02</span>
-            <span className="block text-xs text-gray-600">ЧАСА</span>
-          </div>
-          <div className="bg-white rounded p-2">
-            <span className="text-2xl font-bold text-purple-700">25</span>
-            <span className="block text-xs text-gray-600">МИН</span>
-          </div>
-          <div className="bg-white rounded p-2">
-            <span className="text-2xl font-bold text-purple-700">35</span>
-            <span className="block text-xs text-gray-600">СЕК</span>
-          </div>
+    <div className={styles.countdownTimer}>
+      <h2 className={styles.title}>ИДЕТ ПРЕДЗАПИСЬ!</h2>
+      <h3 className={styles.subtitle}>Окончание через:</h3>
+      <div className={styles.timerContainer}>
+        <div className={styles.timerSection}>
+          <span className={styles.timer}>{timeLeft.days}</span>
+          <span className={styles.date}>дней</span>
         </div>
-        <button className="bg-yellow-400 text-white font-semibold rounded px-6 py-2 mt-4 hover:bg-yellow-500 transition duration-300">
-          Заполнить анкету
-        </button>
+        <span className={styles.separator}>:</span>
+        <div className={styles.timerSection}>
+          <span className={styles.timer}>{timeLeft.hours}</span>
+          <span className={styles.date}>часа</span>
+        </div>
+        <span className={styles.separator}>:</span>
+        <div className={styles.timerSection}>
+          <span className={styles.timer}>{timeLeft.minutes}</span>
+          <span className={styles.date}>мин</span>
+        </div>
+        <span className={styles.separator}>:</span>
+        <div className={styles.timerSection}>
+          <span className={styles.timer}>{timeLeft.seconds}</span>
+          <span className={styles.date}>сек</span>
+        </div>
       </div>
+      <button className={`button ${styles.fillBtn}`}>
+        Заполнить анкету
+      </button>
     </div>
   );
 };
