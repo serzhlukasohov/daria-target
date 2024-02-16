@@ -1,0 +1,19 @@
+.videoPresentationContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.videoPresentationStub {
+  display: flex;
+  justify-content: center; /* Центрирование по горизонтали */
+  align-items: center; /* Центрирование по вертикали */
+  height: 100%;
+  width: 672px;
+  height: 500px;
+  background-color: rgba(208, 199, 252, 0.3);
+}
+.videoPresentationBlock {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
