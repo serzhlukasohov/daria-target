@@ -1,6 +1,9 @@
 import React from "react";
-import styles from "./FeaturesSection.module.css"; // Make sure the path is correct
-import img from "../../components/FeaturesSection/img.jpg"; // Make sure the path is correct
+import Image from "next/image";
+
+import styles from "./FeaturesSection.module.css";
+import DariaLevshinaImage from "./images/DariaLevshina.png";
+import HeartIcon from "./images/heart.svg";
 
 const FeaturesSection = () => {
   return (
@@ -12,8 +15,12 @@ const FeaturesSection = () => {
         <div className={styles.featuresText}>
           <div className={styles.featuresText}>
             <div className="flex items-center">
-              <i className={`fas fa-lightbulb ${styles.featureIcon}`}></i>
-              <p>Ты узнаешь:</p>
+              <Image 
+              width="33" 
+              height="44" 
+              src={HeartIcon} 
+              className={styles.featureIcon}/>
+              <p >Ты узнаешь:</p>
             </div>
             <ul className={styles.featureList}>
               <li>
@@ -31,14 +38,12 @@ const FeaturesSection = () => {
             </ul>
           </div>
         </div>
-        <div className={styles.featureImage}>
-          <img
-            alt="A woman in a white dress posing with a confident smile"
-            className="rounded-full"
-            height="400"
-            src={img}
-            width="300"
-          />
+        <div className={styles.c}>
+          <Image 
+          width="303"
+          height="437"
+          alt="Daria Levshina"
+          src={DariaLevshinaImage} />
         </div>
       </div>
     </section>
