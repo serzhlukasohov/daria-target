@@ -14,10 +14,13 @@
   --light-yellow: #FFF170;
   --light-lavender: #D0C7FC;
 
+  --font-regular-14: normal 400 14px/140% Montserrat;
   --font-regular-16: normal 400 16px/140% Montserrat;
   --font-regular-18: normal 400 18px/140% Montserrat;
   --font-regular-20: normal 400 20px/140% Montserrat;
 
+  --font-semi-medium-14: normal 500 14px/140% Montserrat;
+  --font-semi-medium-20: normal 500 20px/140% Montserrat;
   --font-semi-medium-24: normal 500 24px/140% Montserrat;
 
   --font-semi-bold-28: normal 600 28px/140% Montserrat;
@@ -27,6 +30,8 @@
   --letter-spacing-32: 0.32px;
 
   --section-margin-b: 130px;
+  --section-margin-b-tab: 100px;
+  --section-margin-b-mob: 70px;
 
   --border-radius: 20px;
 }

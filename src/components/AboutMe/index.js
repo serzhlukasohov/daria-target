@@ -24,12 +24,12 @@ const AboutMe = () => {
               <span className={styles.aboutMeTextSpan}>
                 Привет! Меня зовут Дарья Левшина!
               </span>
-              <p class="Gifts_text__kmQiW">
+              <p>
                 Я живу в Польше и с 2022 года я Таргетолог, работаю с
                 предпринимателями, салонами, блогерами, онлайн-школами и
                 другими, мой доход ОТ 2000$ месяц.
               </p>
-              <p class="Gifts_text__kmQiW">
+              <p>
                 Первый свой курс по таргету я покупала работая в найме (в
                 рассрочку) всегда мечтала работать удаленно на себя несколько
                 часов в день, чтобы больше времени уделять себе, семье и
@@ -43,19 +43,19 @@ const AboutMe = () => {
             <div className={styles.aboutMeBlockFlex}>
               <div className={styles.aboutMeFlexBlock}>
                 <span className={styles.aboutMeTextSpan}>от 2000$</span>
-                <p class="Gifts_text__kmQiW">доход в месяц </p>
+                <p>доход в месяц </p>
               </div>
               <div className={styles.aboutMeFlexBlock}>
                 <span className={styles.aboutMeTextSpan}>40+</span>
-                <p class="Gifts_text__kmQiW">успешных проектов</p>
+                <p>успешных проектов</p>
               </div>
               <div className={styles.aboutMeFlexBlock}>
                 <span className={styles.aboutMeTextSpan}>Европа</span>
-                <p class="Gifts_text__kmQiW">гео</p>
+                <p>гео</p>
               </div>
               <div className={styles.aboutMeFlexBlock}>
                 <span className={styles.aboutMeTextSpan}>50</span>
-                <p class="Gifts_text__kmQiW">выпускников</p>
+                <p>выпускников</p>
               </div>
             </div>
           </div>

@@ -60,3 +60,29 @@
 .footerLinks p:nth-child(3) {
   margin: 0;
 }
+
+@media (max-width: 768px) {
+  .navLinks {
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+
+  .footerTop {
+    flex-direction: column;
+  }
+
+  .contactInfo {
+    margin-bottom: 16px;
+  }
+
+  .footerLinks p {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 425px) {
+  .navLinks {
+    justify-content: space-between;
+    gap: 24px;
+  }
+}

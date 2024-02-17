@@ -1,4 +1,5 @@
 import React from 'react';
+
 import styles from './FAQSection.module.css'
 
 const FAQSection = () => {
