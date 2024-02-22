@@ -10,7 +10,7 @@ import TargetologistIcon from "./images/targetologist.svg";
 
 const CareerPath = () => {
   return (
-    <section className={styles.careerPathContainer}>
+    <section id="for-whom" className={styles.careerPathContainer}>
       <h2 className={styles.careerPathItem}>ДЛЯ ТЕБЯ, ЕСЛИ ТЫ</h2>
       <div className={styles.careerPathList}>
         <div className={styles.careerPathBlock}>

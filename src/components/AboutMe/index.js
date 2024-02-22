@@ -6,7 +6,7 @@ import DariaLevshinaImage from "./images/DariaLevshina.png";
 
 const AboutMe = () => {
   return (
-    <section>
+    <section id="about">
       <div className={styles.aboutMeContainer}>
         <h2 className="sectionTitle">ОБО МНЕ</h2>
         <div className={styles.aboutMeBlock}>

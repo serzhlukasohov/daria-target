@@ -1,3 +1,5 @@
+
+
 import Head from "next/head";
 import Navbar from "../components/Navbar";
 import Promo from "../components/Promo";
@@ -15,6 +17,13 @@ import Gifts from "@/components/Gifts";
 import Speakers from "@/components/Speakers";
 import ForYou from "@/components/ForYou";
 import Testimonial from "@/components/Testimonial";
+
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+}
 
 export default function Home() {
   return (
@@ -50,7 +59,11 @@ export default function Home() {
         <Testimonial />
         <FAQSection />
         <Footer />
-        <div className="fixed bottom-4 right-4 bg-purple-400 p-3 rounded-full shadow-lg">
+        <div
+          className="backToTopButton fixed bottom-4 right-4 bg-purple-400 p-3 rounded-full shadow-lg"
+          onClick={scrollToTop}
+          style={{ cursor: "pointer" }}
+        >
           <i className="fas fa-arrow-up text-white"></i>
         </div>
       </div>

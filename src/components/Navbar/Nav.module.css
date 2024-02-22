@@ -1,44 +1,128 @@
 /* Nav.module.css */
 
 .nav {
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+.navBox {
   display: flex;
-  align-items: center;
+  gap: 44px;
+}
+
+.navList {
+  display: flex;
+  align-items: flex-start;
   justify-content: center;
   gap: 44px;
-  padding-top: 40px;
-  padding-bottom: 58px;
+  margin-bottom: 32px;
 }
 
-.nav-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+.navLink {
+  color: var(--dark-plum);
+  font: var(--font-regular-18);
+  padding-bottom: 4px;
+  letter-spacing: var(--letter-spacing);
+  border-bottom: 1px solid transparent;
+  transition: color 250ms, border-bottom-color 250ms;
 }
 
-.nav-item {
-  font-family: Montserrat;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 140%;
-  letter-spacing: 0.36px;
-}
-
-.nav-link {
-  color: #261436;
-  text-decoration: none;
-}
-
-.nav-link:hover {
-  text-decoration: underline;
+.navLink:focus,
+.navLink:hover {
+  color: var(--dark-purple);
+  border-bottom-color: var(--dark-purple);
 }
 
 .rotatedElement {
- 
+  display: block;
   position: absolute;
-  top: 10px;
-  right: 10px;
-  bottom: 10px;
-  left: 10px;
- 
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.rotatedMobElement {
+  display: none;
+}
+.mobBtn {
+  display: none;
+}
+.curl {
+  display: none;
+}
+@media (max-width: 1024px) {
+  .rotatedElement {
+    display: none;
+  }
+
+  .navBox {
+    gap: 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav {
+    padding-top: 72px;
+  }
+  .mobBtn {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    position: fixed;
+
+    z-index: 10;
+  }
+
+  .navBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 20px;
+  }
+
+  .navList {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    padding-top: 76px;
+    background-color: var(--yellow-light);
+    z-index: 10;
+    transform: translateX(100%);
+    transition: transform 1s;
+  }
+  .navLink {
+    color: var(--dark-plum);
+    font: var(--font-regular-18);
+    letter-spacing: var(--letter-spacing);
+  }
+
+  .curl {
+    display: block;
+    margin-top: auto;
+    padding: 0;
+    width: 100%;
+    height: auto;
+  }
+
+  .active {
+    transform: translateX(0);
+  }
+  .rotatedMobElement {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
 }

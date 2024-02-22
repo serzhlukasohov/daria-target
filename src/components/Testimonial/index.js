@@ -17,7 +17,7 @@ import IraVideoImage from './images/iraVideo.png';
 
 const TestimonialContainer = () => {
   return (
-    <section className={styles.testimonialsContainer}>
+    <section id="testimonials" className={styles.testimonialsContainer}>
       <h2 className="sectionTitle">
         ОТЗЫВЫ
       </h2>

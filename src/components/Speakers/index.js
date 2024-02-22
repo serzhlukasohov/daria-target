@@ -20,7 +20,7 @@ function Speaker({ name, imageSrc }) {
 
 const Speakers = () => {
   return (
-    <div className={styles.speakersContainer}>
+    <div id="speakers" className={styles.speakersContainer}>
       <h2 className="sectionTitle">СПИКЕРЫ — СОВСЕМ СКОРО</h2>
       <div className={styles.listSpeakers}>
         <Speaker name="Дизайнер" imageSrc={SpeakerImage} />

@@ -52,7 +52,7 @@ function RateCard({
 
 const Rates = () => {
   return (
-    <div className={styles.containerRates}>
+    <div id="pricing" className={styles.containerRates}>
       <h2 className="sectionTitle">ТАРИФЫ</h2>
       <h3 className={styles.priceText}>
         1-я цена по акции предзаписи.

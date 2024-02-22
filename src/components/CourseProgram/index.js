@@ -7,7 +7,7 @@ import BookIcon from './images/book.svg';
 
 const CourseProgram = () => {
   return (
-    <div>
+    <div id='program'>
       <h2 className="sectionTitle">ПРОГРАММА КУРСА</h2>
       <div className={styles.listCards}>
         <CourseCard />
