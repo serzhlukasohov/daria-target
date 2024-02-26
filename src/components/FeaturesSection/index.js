@@ -9,18 +9,18 @@ const FeaturesSection = () => {
   return (
     <section className={styles.featuresSection}>
       <h2 className={styles.sectionTitle}>
-        PROTARGET — СОТРИ ГРАНИЦЫ В ПРОДВИЖЕНИИ
+      PROTarget — СОТРИ ГРАНИЦЫ В ПРОДВИЖЕНИИ
       </h2>
       <div className={styles.featuresContent}>
         <div className={styles.featuresText}>
           <div className={styles.featuresText}>
-            <div className="flex items-center">
+            <div className={styles.featuresContentFlex}>
               <Image 
               width="33" 
               height="44" 
               src={HeartIcon} 
               className={styles.featureIcon}/>
-              <p >Ты узнаешь:</p>
+              <p>Ты узнаешь:</p>
             </div>
             <ul className={styles.featureList}>
               <li>
@@ -38,7 +38,7 @@ const FeaturesSection = () => {
             </ul>
           </div>
         </div>
-        <div className={styles.c}>
+        <div className={styles.featuresImg}>
           <Image 
           width="303"
           height="437"
