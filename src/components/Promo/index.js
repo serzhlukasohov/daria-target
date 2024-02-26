@@ -12,7 +12,8 @@ const Promo = () => {
 
         <p className={styles.promoDescription}>
           С любой точки мира, без связей ты сможешь зарабатывать 1000-3000$ с
-          помощью таргетированной рекламы. Я тебя научу!
+          помощью таргетированной рекламы. <br className={styles.br}></br>Я тебя
+          научу!
         </p>
       </header>
       <div className={styles.promoFooterContainer}>
@@ -20,7 +21,10 @@ const Promo = () => {
           <span className={styles.promoInfoItem}>Онлайн</span>
           <span className={styles.promoInfoItem}>С спикеров</span>
         </div>
-        <button className={styles.promoLearnButton}>Заполнить анкету</button>
+        <div className={styles.promoLearnButton}>
+          <button>Заполнить анкету</button>
+        </div>
+
         <div className={styles.promoInfoContainer}>
           <span className={styles.promoInfoItem}>8 недель</span>
           <span className={styles.promoInfoItem}>22.01.2024</span>

@@ -2,36 +2,30 @@
 
 .promoContainer {
   background: var(--light-lavender);
-  border-radius: 20px;
-  border: 1px solid var(--black, #261436);
+  border-radius: var(--border-radius);
+  border: 1px solid var(--dark-plum);
   padding: 103px 40px 61px 40px;
   margin-bottom: 3rem;
   position: relative;
-  
 }
 
 .promoHeader {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  
 }
 
 .promoTitle {
-  color: #261436;
-  font-family: Montserrat;
-  font-size: 62px;
-  font-weight: 700;
-  line-height: 140%;
+  color: var(--dark-plum);
+  font: var(--font-bold-62);
   letter-spacing: 1.24px;
-  text-transform: uppercase;
 }
 
 .promoSubtitle {
   margin-left: -15px;
   padding: 5px 25px 5px 15px;
   border-radius: 20px;
-  background: #F6EEA2;
+  background: var(--yellow-light);
   font-style: italic;
 }
 
@@ -41,35 +35,23 @@
   margin-top: 1rem;
 }
 
-.promoButton {
-  background-color: #c6a9f2;
-  color: #7357c0;
-  padding: 0.5rem 1rem;
-  border-radius: 9999px;
-}
-
 .promoDescription {
   position: absolute;
-  right: 40px; 
+  right: 40px;
   top: 61px;
-  color: var(--black, #261436);
-  font-family: Montserrat;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 140%;
+  color: var(--dark-plum);
+  font: var(--font-regular-20);
   letter-spacing: 0.4px;
   width: 433px;
-  
 }
 
 .promoLearnButton {
-  background-color: #FFF170;
-  color: #000;
+  background-color: var(--light-yellow);
+  color: var(--dark-plum);
   padding: 16px 32px;
-  border-radius: 20px;
+  border-radius: var(--border-radius);
   margin-top: 1rem;
-  border: 1px solid #261436;
+  border: 1px solid var(--dark-plum);
 }
 
 .promoInfo {
@@ -82,7 +64,7 @@
 .promoInfoItem {
   padding: 16px 32px;
   border-radius: 20px;
-  border: 1px dashed #261436;
+  border: 1px dashed var(--dark-plum);
 }
 
 .promoFooterContainer {
@@ -90,4 +72,96 @@
   justify-content: space-between;
   margin-top: 60px;
 }
+.br {
+  display: none;
+}
 
+@media (max-width: 1244px) {
+  .promoTitle {
+    font: var(--font-bold-32);
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: var(--dark-plum);
+  }
+  .promoDescription {
+    position: static;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+  }
+  .promoHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .promoContainer {
+    padding: 30px;
+  }
+  .br {
+    display: block;
+  }
+
+  .promoFooterContainer {
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 8px;
+    margin-top: 24px;
+  }
+  .promoFooterContainer::after {
+    content: "";
+    width: 100%;
+  }
+
+  .promoFooterContainer {
+    flex: 1;
+  }
+
+  .promoInfoContainer {
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin: 0;
+  }
+
+  .promoLearnButton {
+    font: var(--font-regular-16);
+    order: 1;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+  .promoInfoItem {
+    font: var(--font-regular-16);
+  }
+}
+@media (max-width: 768px) {
+  .promoContainer {
+    padding: 14px;
+  }
+
+  .promoInfoContainer {
+    gap: 4px;
+  }
+
+  .promoTitle {
+    font: var(--font-bold-24);
+  }
+  .promoDescription {
+    font: var(--font-regular-14);
+  }
+  .promoInfoItem {
+    font: var(--font-regular-14);
+    letter-spacing: 0.02em;
+    border-radius: 20px;
+    padding: 10px 24px;
+  }
+  .promoLearnButton {
+    font: var(--font-regular-14);
+    border-radius: 20px;
+    padding: 14px 24px;
+  }
+}

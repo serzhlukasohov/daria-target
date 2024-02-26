@@ -26,9 +26,11 @@
   --font-semi-medium-20: normal 500 20px/140% Montserrat;
   --font-semi-medium-24: normal 500 24px/140% Montserrat;
 
+  --font-bold-24: normal 700 24px/140% Montserrat;
   --font-semi-bold-28: normal 600 28px/140% Montserrat;
   --font-bold-32: normal 700 32px/140% Montserrat;
   --font-semi-bold-36: normal 600 36px/140% Montserrat;
+  --font-bold-62: normal 700 62px/140% Montserrat;
 
   --letter-spacing-32: 0.32px;
 
