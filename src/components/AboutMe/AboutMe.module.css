@@ -1,25 +1,28 @@
 .aboutMeContainer {
   text-align: center;
-  margin-top: 130px;
-  margin-bottom: 130px;
+  margin: 130px auto;
 }
 
 .aboutMeBlock {
   display: flex;
   justify-content: space-between;
   height: 620px;
+  gap: 32px;
 }
 
 .aboutMeImg {
   width: 419px;
   height: 620px;
 }
+.aboutMeTitle {
+  font: var(--font-semi-bold-36);
+  letter-spacing: 0.02em;
+}
 
 .aboutMeBlockText {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
   width: 759px;
 }
 
@@ -31,32 +34,117 @@
 }
 .aboutMeFlexBlock {
   display: block;
-
   margin: 50px auto;
   text-align: center;
 }
 
 .aboutMeTextSpan {
-  font-family: var(--font-family);
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 140%;
+  font: var(--font-semi-medium-24);
   letter-spacing: 0.02em;
   color: var(--black);
 }
 
 .aboutMeText p {
+  font: var(--font-regular-20);
+  letter-spacing: 0.02em;
   text-align: left;
   padding-top: 16px;
 }
 
-.aboutMeText  {
-    text-align: left;
-    margin-top: 55px;
+.aboutMeText {
+  text-align: left;
+  margin-top: 55px;
+}
+
+.aboutMeText span {
+  text-align: left;
+  margin-top: 55px;
+  margin-bottom: 55px;
+}
+
+.aboutMeImgBox {
+  min-width: 419px;
+  min-height: 620px;
+}
+.aboutMeBlockFlexTab {
+  display: none;
+}
+
+@media (max-width: 1244px) {
+  .aboutMeTitle {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 145%;
+    letter-spacing: 0.02em;
+    margin-bottom: 32px;
   }
-  
-  .aboutMeText span {
-    text-align: left;
-    margin-top: 55px;
-    margin-bottom: 55px;
+
+  .aboutMeTextSpan {
+    font: var(--font-semi-medium-20);
   }
+
+  .aboutMeText {
+    margin: 0;
+    padding: 10px;
+  }
+
+  .aboutMeText p {
+    font: var(--font-regular-16);
+    letter-spacing: 0.02em;
+    text-align: left;
+    padding-top: 16px;
+  }
+
+  .aboutMeBlockFlex {
+    display: none;
+  }
+  .aboutMeBlockFlexTab {
+    display: flex;
+  }
+  .aboutMeImg {
+    width: 220px;
+    height: 325px;
+  }
+  .aboutMeImgBox {
+    min-width: 220px;
+    min-height: 325px;
+  }
+
+  .aboutMeBlock {
+    height: 100%;
+    gap: 24px;
+    margin: auto;
+  }
+}
+@media (max-width: 768px) {
+  .aboutMeBlock {
+    display: block;
+    height: 100%;
+  }
+
+  .aboutMeBlockText {
+    display: block;
+    width: 100%;
+  }
+  .aboutMeImgBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .aboutMeBlockFlexTab {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+}
+  @media (max-width: 620px) {
+    .aboutMeFlexBlock {
+      flex: 0 0 50%;
+      margin:0;
+      padding-top: 10px;
+    }
+  }
+
+
