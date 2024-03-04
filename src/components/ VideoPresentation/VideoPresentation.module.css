@@ -5,8 +5,8 @@
 }
 .videoPresentationStub {
   display: flex;
-  justify-content: center; /* Центрирование по горизонтали */
-  align-items: center; /* Центрирование по вертикали */
+  justify-content: center;
+  align-items: center;
   height: 100%;
   width: 672px;
   height: 500px;
@@ -16,4 +16,63 @@
   display: flex;
   align-items: center;
   gap: 10px;
+}
+
+.videoPresentationTitle {
+  font: var(--font-semi-medium-24);
+  letter-spacing: 0.02em;
+}
+
+.videoPresentationText {
+  font: var(--font-regular-20);
+  letter-spacing: 0.02em;
+  padding-top: 10px;
+}
+
+.videoPresentationBtn {
+  background-color: var(--light-yellow);
+  color: var(--dark-plum);
+  padding: 16px 32px;
+  border-radius: var(--border-radius);
+  margin-top: 24px;
+  border: 1px solid var(--dark-plum);
+  font: var(--font-regular-20);
+}
+
+@media (max-width: 1124px) {
+  .videoPresentationContainer {
+    flex-direction: column;
+  }
+  .videoPresentationBtn {
+    margin-bottom: 32px;
+    font: var(--font-regular-16);
+  }
+  .videoPresentationBlock {
+    justify-content: start;
+    flex-direction: row-reverse;
+  }
+  .videoPresentationBox {
+    text-align: center;
+  }
+  .videoPresentationTitle {
+    font: var(--font-semi-medium-20);
+  }
+
+  .videoPresentationText {
+    font: var(--font-regular-16);
+  }
+}
+
+@media (max-width: 768px) {
+  .videoPresentationStub {
+    width: 500px;
+    height: 250px;
+  }
+}
+
+@media (max-width: 580px) {
+  .videoPresentationStub {
+    width: 280px;
+    height: 250px;
+  }
 }
