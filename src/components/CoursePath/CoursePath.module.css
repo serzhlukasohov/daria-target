@@ -1,15 +1,10 @@
-.сoursePathContainer {
-  margin-top: 130px;
+.coursePathContainer {
+  margin-top: var(--section-margin-b);
 }
 
-.сoursePathTitle {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 600;
-  font-size: 36px;
-  line-height: 1.4;
+.coursePathTitle {
+  font: var(--font-semi-bold-36);
   letter-spacing: 0.02em;
-  text-transform: uppercase;
-  color: #261436;
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   text-align: center;
   padding-bottom: 34px;
@@ -25,17 +20,13 @@
   align-items: center;
   border: 2px dashed #fff170;
   font-size: 32px;
-  color: #261436;
   font-weight: bold;
 }
 
 .coursePathText {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 1.4;
+  font: var(--font-regular-20);
   letter-spacing: 0.02em;
-  color: #261436;
+  padding-top: 16px;
 }
 
 .coursePathBlock {
@@ -45,15 +36,75 @@
   width: 342px;
   height: 255px;
   box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.1);
-  background: #d0c7fc;
+  background: var(--light-lavender);
 }
 
 .coursePathFlex {
   display: flex;
+  align-items: stretch;
   padding-bottom: 32px;
   justify-content: space-between;
   justify-content: center;
   flex-wrap: wrap;
   align-items: center;
   gap: 10px;
+}
+
+@media (max-width: 1304px) {
+  .coursePathTitle {
+    font: var(--font-semi-bold-28);
+    text-shadow: none;
+  }
+
+  .coursePathIcon {
+    display: none;
+  }
+
+  .coursePathFlex {
+    display: flex;
+    align-items: stretch;
+    padding-bottom: 0;
+    gap: 20px;
+  }
+
+  .coursePathText {
+    font: var(--font-regular-16);
+  }
+
+  .coursePathBlock {
+    width: 342px;
+    height: 196px;
+  }
+
+  .coursePathBorder {
+    border-radius: 20px;
+    padding: 10px;
+    width: 47px;
+    height: 54px;
+    font: var(--font-bold-24);
+    letter-spacing: 0.02em;
+  }
+}
+@media (max-width: 768px) {
+  .coursePathTitle {
+    font: var(--font-semi-bold-18);
+  }
+  .coursePathBlock {
+    width: 280px;
+    height: 100%;
+  }
+  .coursePathBorder {
+   
+    font: var(--font-semi-bold-18);
+    border-radius: 20px;
+    padding: 10px;
+    width: 40px;
+    height: 45px;
+    margin: auto;
+  }
+  .coursePathText {
+    font: var( --font-regular-14);
+    text-align: center;
+  }
+
 }
