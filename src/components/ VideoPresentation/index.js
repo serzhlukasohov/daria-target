@@ -4,6 +4,7 @@ import Image from "next/image";
 import styles from "./VideoPresentation.module.css";
 import StubIcon from "./images/stub.svg";
 import HeartIcon from "./images/heart.svg";
+import LogoIcon from "./images/logo.svg";
 
 const VideoPresentation = () => {
   return (
@@ -16,6 +17,14 @@ const VideoPresentation = () => {
               width="44"
               height="52"
               src={HeartIcon}
+              className={styles.videoPresentationHeart}
+            />
+          </div>
+          <div>
+            <Image
+              width="44"
+              height="52"
+              src={LogoIcon}
               className={styles.videoPresentationHeart}
             />
           </div>
