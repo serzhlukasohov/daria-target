@@ -1,5 +1,3 @@
-
-
 import Head from "next/head";
 import Navbar from "../components/Navbar";
 import Promo from "../components/Promo";
@@ -41,31 +39,28 @@ export default function Home() {
           rel="stylesheet"
         />
       </Head>
-
-      <div className="container mx-auto px-4">
-        <Navbar />
-        <Promo />
-        <FeaturesSection />
-        <Timer />
-        <AboutMe />
-        <VideoPresentation />
-        <CoursePath />
-        <CareerPath />
-        <CourseProgram />
-        <ForYou />
-        <Rates />
-        <Gifts />
-        <Speakers />
-        <Testimonial />
-        <FAQSection />
-        <Footer />
-        <div
-          className="backToTopButton fixed bottom-4 right-4 bg-purple-400 p-3 rounded-full shadow-lg"
-          onClick={scrollToTop}
-          style={{ cursor: "pointer" }}
-        >
-          <i className="fas fa-arrow-up text-white"></i>
-        </div>
+      <Navbar />
+      <Promo />
+      <FeaturesSection />
+      <Timer />
+      <AboutMe />
+      <VideoPresentation />
+      <CoursePath />
+      <CareerPath />
+      <CourseProgram />
+      <ForYou />
+      <Rates />
+      <Gifts />
+      <Speakers />
+      <Testimonial />
+      <FAQSection />
+      <Footer />
+      <div
+        className="backToTopButton fixed bottom-4 right-4 bg-purple-400 p-3 rounded-full shadow-lg"
+        onClick={scrollToTop}
+        style={{ cursor: "pointer" }}
+      >
+        <i className="fas fa-arrow-up text-white"></i>
       </div>
     </div>
   );
