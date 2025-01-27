@@ -32,9 +32,7 @@ const VideoPresentation = () => {
         <p className={styles.videoPresentationText}>
           Соприкоснись с курсом ProTarget
         </p>
-        <button className={styles.videoPresentationBtn}>
-          Заполнить анкету
-        </button>
+        <button className={`button ${styles.fillBtn}`}>Заполнить анкету</button>
       </div>
 
       <div className={styles.videoPresentationStub}>

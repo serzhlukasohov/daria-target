@@ -1,22 +1,17 @@
-.aboutMeContainer {
-  text-align: center;
-  margin: 130px auto;
-}
-
-.aboutMeBlock {
-  display: flex;
-  justify-content: space-between;
-  height: 620px;
-  gap: 32px;
-}
-
-.aboutMeImg {
-  width: 419px;
-  height: 620px;
-}
 .aboutMeTitle {
   font: var(--font-semi-bold-36);
   letter-spacing: 0.02em;
+}
+.aboutMeBlock {
+  display: flex;
+  justify-content: center;
+  height: 620px;
+  gap: 32px;
+  margin: 40px 51px 130px 51px;
+}
+.aboutMeImg {
+  width: 419px;
+  height: 620px;
 }
 
 .aboutMeBlockText {
@@ -31,11 +26,29 @@
   text-align: center;
   width: 100%;
   align-items: flex-end;
+  gap: 50px;
+  margin-bottom: 55px;
 }
 .aboutMeFlexBlock {
   display: block;
-  margin: 50px auto;
-  text-align: center;
+  height: 70px;
+}
+.aboutMeTextTop {
+  font-family: var(--font-family);
+  font: var(--font-regular-20);
+  letter-spacing: 0.02em;
+  padding-top: 24px;
+}
+.aboutMeTextBottom {
+  font-family: var(--font-family);
+  font: var(--font-regular-20);
+  letter-spacing: 0.02em;
+  padding-top: 16px;
+}
+.aboutMeTextP {
+  font-family: var(--font-family);
+  font: var(--font-regular-20);
+  letter-spacing: 0.02em;
 }
 
 .aboutMeTextSpan {
@@ -43,108 +56,144 @@
   letter-spacing: 0.02em;
   color: var(--black);
 }
-
-.aboutMeText p {
-  font: var(--font-regular-20);
-  letter-spacing: 0.02em;
-  text-align: left;
-  padding-top: 16px;
-}
-
 .aboutMeText {
   text-align: left;
   margin-top: 55px;
-}
-
-.aboutMeText span {
-  text-align: left;
-  margin-top: 55px;
-  margin-bottom: 55px;
-}
-
-.aboutMeImgBox {
-  min-width: 419px;
-  min-height: 620px;
+  margin-bottom: 30px;
 }
 .aboutMeBlockFlexTab {
   display: none;
 }
 
-@media (max-width: 1244px) {
+/* background svg */
+.aboutMeBlokBackground {
+  position: relative;
+  width: auto;
+}
+.aboutMeBackground {
+  position: absolute;
+  width: 858px;
+  height: 858px;
+  border-radius: 50%;
+  filter: blur(34px);
+  background: url("../../../public/background.svg") center/cover no-repeat;
+  z-index: -1;
+  bottom: -257px;
+  right: -22px;
+}
+
+@media (max-width: 1304px) {
   .aboutMeTitle {
-    font-weight: 600;
-    font-size: 28px;
-    line-height: 145%;
-    letter-spacing: 0.02em;
-    margin-bottom: 32px;
-  }
-
-  .aboutMeTextSpan {
-    font: var(--font-semi-medium-20);
-  }
-
-  .aboutMeText {
-    margin: 0;
-    padding: 10px;
-  }
-
-  .aboutMeText p {
-    font: var(--font-regular-16);
-    letter-spacing: 0.02em;
-    text-align: left;
-    padding-top: 16px;
-  }
-
-  .aboutMeBlockFlex {
-    display: none;
-  }
-  .aboutMeBlockFlexTab {
-    display: flex;
+    font: var(--font-semi-bold-28);
   }
   .aboutMeImg {
     width: 220px;
-    height: 325px;
+    height: 326px;
   }
-  .aboutMeImgBox {
-    min-width: 220px;
-    min-height: 325px;
+  .aboutMeTextP {
+    font: var(--font-regular-16);
+    padding-top: 8px;
   }
-
-  .aboutMeBlock {
-    height: 100%;
-    gap: 24px;
-    margin: auto;
+  .aboutMeTextTop {
+    font: var(--font-regular-16);
   }
-}
-@media (max-width: 768px) {
-  .aboutMeBlock {
-    display: block;
-    height: 100%;
+  .aboutMeTextBottom {
+    font: var(--font-regular-16);
   }
-
   .aboutMeBlockText {
-    display: block;
-    width: 100%;
+    width: 460px;
   }
-  .aboutMeImgBox {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  .aboutMeTextSpan {
+    font: var(--font-semi-medium-20);
+  }
+  .aboutMeText {
+    margin: 0;
+    padding: 0;
   }
 
   .aboutMeBlockFlexTab {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin-top: 20px;
+    width: 100%;
+    align-items: flex-end;
+    margin: auto;
+    margin-bottom: 100px;
+    margin-top: 24px;
+
+    gap: 50px;
+    max-width: 641px;
+  }
+
+  .aboutMeBlock {
+    height: 100%;
+    margin: 0;
+    margin-top: 32px;
+  }
+  .aboutMeBlockFlex {
+    display: none !important;
+  }
+  .customBreak {
+    display: block;
+    height: 12px;
   }
 }
-  @media (max-width: 620px) {
-    .aboutMeFlexBlock {
-      flex: 0 0 50%;
-      margin:0;
-      padding-top: 10px;
-    }
+
+@media (max-width: 768px) {
+  .aboutMeContainer {
+    display: flex;
+    flex-direction: column;
   }
 
+  .aboutMeBlockFlexTab {
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-between;
+    gap: 10px;
+    max-width: 340px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 70px;
+  }
+  .aboutMeFlexBlock {
+    width: 130px;
+  }
 
+  .aboutMeBlock {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .aboutMeTitle {
+    font: var(--font-semi-bold-18);
+  }
+  .aboutMeImg {
+    width: 169px;
+    height: 250px;
+  }
+  .aboutMeTextP {
+    font: var(--font-regular-14);
+    padding-top: 8px;
+  }
+  .aboutMeTextTop {
+    font: var(--font-regular-14);
+  }
+  .aboutMeTextBottom {
+    font: var(--font-regular-14);
+  }
+  .aboutMeBlockText {
+    max-width: 100%;
+    min-width: 260px;
+    justify-content: center;
+  }
+  .aboutMeText {
+    max-width: 340px;
+    margin: auto;
+  }
+  .aboutMeTextSpan {
+    font: var(--font-semi-medium-16);
+  }
+  .aboutMeBackground {
+    bottom: -117px;
+    right: 52px;
+    margin-bottom: 10px;
+  }
+}
